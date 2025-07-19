@@ -1,0 +1,17 @@
+<svg width="1178" height="600" viewBox="0 0 1178 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#e5e5e5" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="#f8f9fa"/>
+  <rect width="100%" height="100%" fill="url(#grid)"/>
+  <rect x="20" y="20" width="1138" height="560" fill="none" stroke="#d1d5db" stroke-width="2" stroke-dasharray="10,5"/>
+  <circle cx="589" cy="280" r="30" fill="#e5e7eb"/>
+  <text x="589" y="320" text-anchor="middle" font-family="system-ui, sans-serif" font-size="24" font-weight="500" fill="#6b7280">
+    Portfolio Project 2
+  </text>
+  <text x="589" y="345" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" fill="#9ca3af">
+    1178 × 600
+  </text>
+</svg>
