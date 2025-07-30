@@ -10,7 +10,7 @@ export default function Index() {
             {/* Logo */}
             <div className="flex-shrink-0">
               <img
-                src="/images/logo-header.png"
+                src="images/logo-header.png"
                 alt="Rita Moussalli Logo"
                 className="h-8 w-auto"
               />
@@ -129,7 +129,7 @@ export default function Index() {
         <div className="absolute right-0 top-0 bottom-0 w-1/2 lg:flex items-end justify-end hidden lg:block">
           <div className="relative mx-auto lg:mx-0 max-w-md lg:max-w-3xl">
             <img
-              src="/images/hero-image.png"
+              src="images/hero-image.png"
               alt="Rita Moussalli Portrait"
               className="w-full h-auto object-contain rounded-lg"
             />
@@ -347,7 +347,7 @@ export default function Index() {
                 {/* Project Image */}
                 <div className="px-2 pb-2">
                   <img
-                    src="/images/portfolio-1.svg"
+                    src="images/portfolio-1.svg"
                     alt="Project thumbnail"
                     className="w-full h-64 lg:h-80 object-cover rounded-2xl"
                   />
@@ -403,7 +403,7 @@ export default function Index() {
                 {/* Project Image */}
                 <div className="px-2 pb-2">
                   <img
-                    src="/images/portfolio-2.svg"
+                    src="images/portfolio-2.svg"
                     alt="Project thumbnail"
                     className="w-full h-64 lg:h-80 object-cover rounded-2xl"
                   />
@@ -459,7 +459,7 @@ export default function Index() {
                 {/* Project Image */}
                 <div className="px-2 pb-2">
                   <img
-                    src="/images/portfolio-3.svg"
+                    src="images/portfolio-3.svg"
                     alt="Project thumbnail"
                     className="w-full h-64 lg:h-80 object-cover rounded-2xl"
                   />
@@ -515,7 +515,7 @@ export default function Index() {
                 {/* Project Image */}
                 <div className="px-2 pb-2">
                   <img
-                    src="/images/portfolio-4.svg"
+                    src="images/portfolio-4.svg"
                     alt="Project thumbnail"
                     className="w-full h-64 lg:h-80 object-cover rounded-2xl"
                   />
@@ -1086,7 +1086,7 @@ export default function Index() {
             <div className="order-2 lg:order-1">
               <div className="relative">
                 <img
-                  src="/images/about-hero.svg"
+                  src="images/about-hero.svg"
                                       alt="Rita Moussalli"
                   className="w-full h-auto object-cover rounded-3xl max-w-md mx-auto lg:mx-0"
                 />
@@ -1297,7 +1297,7 @@ export default function Index() {
             <div className="border border-portfolio-gray-border rounded-2xl p-8 bg-transparent">
               <div className="mb-8">
                 <img
-                  src="/images/profile-small.svg"
+                  src="images/profile-small.svg"
                   alt="Client Logo"
                   className="h-6 w-auto mb-8"
                 />
@@ -1344,7 +1344,7 @@ export default function Index() {
               <div className="border-t border-portfolio-gray-border pt-6">
                 <div className="flex items-center">
                   <img
-                    src="/images/icon-1.svg"
+                    src="images/icon-1.svg"
                     alt="Jerome Bell"
                     className="w-15 h-15 rounded-full mr-4"
                   />
@@ -1393,7 +1393,7 @@ export default function Index() {
               <div className="border-t border-portfolio-gray-border pt-6">
                 <div className="flex items-center">
                   <img
-                    src="/images/icon-2.svg"
+                    src="images/icon-2.svg"
                     alt="Wade Warren"
                     className="w-15 h-15 rounded-full mr-4"
                   />

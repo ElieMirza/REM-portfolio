@@ -10,7 +10,7 @@ export default function About() {
           <div className="flex-shrink-0">
             <Link to="/">
               <img
-                src="/images/logo-header.png"
+                src="images/logo-header.png"
                                   alt="Rita Moussalli Logo"
                 className="h-8 w-auto"
               />
@@ -87,7 +87,7 @@ export default function About() {
             <div className="order-2 lg:order-1">
               <div className="relative">
                 <img
-                  src="/images/about-hero.svg"
+                  src="images/about-hero.svg"
                                       alt="Rita Moussalli"
                   className="w-full h-auto object-cover rounded-3xl max-w-md mx-auto lg:mx-0"
                 />
@@ -372,28 +372,28 @@ export default function About() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 mt-12">
               <div className="w-full">
                 <img
-                  src="/images/about-gallery-1.webp"
+                  src="images/about-gallery-1.webp"
                   alt="Travel destination 1"
                   className="w-full h-[400px] md:h-[437px] object-cover rounded-2xl"
                 />
               </div>
               <div className="w-full">
                 <img
-                  src="/images/about-gallery-2.webp"
+                  src="images/about-gallery-2.webp"
                   alt="Travel destination 2"
                   className="w-full h-[400px] md:h-[437px] object-cover rounded-2xl"
                 />
               </div>
               <div className="w-full">
                 <img
-                  src="/images/about-gallery-3.webp"
+                  src="images/about-gallery-3.webp"
                   alt="Travel destination 3"
                   className="w-full h-[400px] md:h-[437px] object-cover rounded-2xl"
                 />
               </div>
               <div className="w-full">
                 <img
-                  src="/images/about-gallery-4.webp"
+                  src="images/about-gallery-4.webp"
                   alt="Travel destination 4"
                   className="w-full h-[400px] md:h-[437px] object-cover rounded-2xl"
                 />

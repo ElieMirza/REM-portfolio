@@ -10,7 +10,7 @@ export default function Projects() {
           <div className="flex-shrink-0">
             <Link to="/">
               <img
-                src="/images/logo-header.png"
+                src="images/logo-header.png"
                                   alt="Rita Moussalli Logo"
                 className="h-8 w-auto"
               />
