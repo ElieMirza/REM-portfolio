@@ -5,145 +5,134 @@ export default function Index() {
     <div className="min-h-screen bg-portfolio-dark text-white font-inter">
       {/* Navigation Header */}
       <header className="relative z-10">
-        <nav className="flex items-center justify-between px-4 md:px-8 lg:px-60 py-4 h-[70px]">
-          {/* Logo */}
-          <div className="flex-shrink-0">
-            <img
-              src="/images/logo-header.png"
-              alt="Rita Moussalli Logo"
-              className="h-8 w-auto"
-            />
-          </div>
-
-          {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-8">
-            <Link to="/" className="text-portfolio-green text-base font-normal">
-              Home
-            </Link>
-            <Link
-              to="/about"
-              className="text-white text-base font-normal hover:text-portfolio-green transition-colors"
-            >
-              About
-            </Link>
-            <Link
-              to="/projects"
-              className="text-white text-base font-normal hover:text-portfolio-green transition-colors"
-            >
-              Projects
-            </Link>
-            <Link
-              to="/services"
-              className="text-white text-base font-normal hover:text-portfolio-green transition-colors"
-            >
-              Services
-            </Link>
-            <Link
-              to="/contact"
-              className="text-white text-base font-normal hover:text-portfolio-green transition-colors"
-            >
-              Contact
-            </Link>
-          </div>
-
-          {/* Contact Button */}
-          <div className="hidden lg:block">
-            <button className="px-6 py-3 border border-white/80 rounded-full bg-portfolio-dark text-white text-base font-normal hover:bg-white hover:text-portfolio-dark transition-colors">
-              Contact Me
-            </button>
-          </div>
-
-          {/* Mobile Menu Button */}
-          <button className="lg:hidden p-2">
-            <svg
-              className="w-6 h-6 text-white"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
+        <div className="container mx-auto px-4 md:px-8 lg:px-60">
+          <nav className="flex items-center justify-between py-4 h-[70px]">
+            {/* Logo */}
+            <div className="flex-shrink-0">
+              <img
+                src="/images/logo-header.png"
+                alt="Rita Moussalli Logo"
+                className="h-8 w-auto"
               />
-            </svg>
-          </button>
-        </nav>
+            </div>
+
+            {/* Desktop Navigation */}
+            <div className="hidden lg:flex items-center space-x-8">
+              <Link to="/" className="text-portfolio-green text-base font-normal">
+                Home
+              </Link>
+              <Link
+                to="/about"
+                className="text-white text-base font-normal hover:text-portfolio-green transition-colors"
+              >
+                About
+              </Link>
+              <Link
+                to="/projects"
+                className="text-white text-base font-normal hover:text-portfolio-green transition-colors"
+              >
+                Projects
+              </Link>
+              <Link
+                to="/services"
+                className="text-white text-base font-normal hover:text-portfolio-green transition-colors"
+              >
+                Services
+              </Link>
+              <Link
+                to="/contact"
+                className="text-white text-base font-normal hover:text-portfolio-green transition-colors"
+              >
+                Contact
+              </Link>
+            </div>
+
+            {/* Contact Button */}
+            <div className="hidden lg:block">
+              <button className="px-5 py-0.5 border border-white/80 rounded-full bg-portfolio-dark text-white text-md font-normal hover:bg-white hover:text-portfolio-dark transition-colors">
+                Contact Me
+              </button>
+            </div>
+
+            {/* Mobile Menu Button */}
+            <button className="lg:hidden p-2">
+              <svg
+                className="w-6 h-6 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </nav>
+        </div>
       </header>
 
       {/* Hero Section */}
       <main className="relative min-h-screen">
-        <div className="container mx-auto px-4 md:px-8 lg:px-60 lg:pr-0">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center min-h-[calc(100vh-70px)] lg:pr-0">
-            {/* Left Content */}
-            <div className="space-y-8 lg:space-y-12 lg:max-w-lg lg:pr-8">
-              {/* Availability Status */}
-              <div className="flex items-center justify-center lg:justify-start">
-                <div className="flex items-center px-4 py-2 border border-portfolio-gray-border rounded-full">
-                  <div className="w-3 h-3 bg-portfolio-green rounded-full mr-3 flex-shrink-0"></div>
-                  <span className="text-white text-base font-normal uppercase tracking-wide">
-                    Available for Work
-                  </span>
-                </div>
-              </div>
-
-              {/* Main Heading */}
-              <div className="text-center lg:text-left">
-                <h1 className="text-white font-normal uppercase leading-[0.9] tracking-[-0.04em]">
-                  <div className="text-6xl md:text-8xl lg:text-[12.5rem] xl:text-[12.5rem]">
-                    Rita.
-                  </div>
-                </h1>
-              </div>
-
-              {/* Description */}
-              <div className="max-w-md mx-auto lg:mx-0">
-                <p className="text-white text-base font-normal leading-relaxed">
-                  I blend artistry with cutting-edge technology to deliver
-                  websites that not only look stunning but also drive results.
-                </p>
-              </div>
-
-              {/* CTA Button */}
-              <div className="flex justify-center lg:justify-start">
-                <button className="flex items-center px-8 py-3 bg-portfolio-green rounded-full text-portfolio-dark-text text-base font-normal hover:bg-portfolio-green/90 transition-colors">
-                  <svg
-                    className="w-4 h-4 mr-3"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M10.5 8L13.5 11L10.5 14"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M4.5 2V11H13.5"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                  Schedule a consultation
-                </button>
-              </div>
+        <div className="relative min-h-[calc(100vh-70px)] flex flex-col justify-start pt-16 lg:pt-20 space-y-12 lg:space-y-16">
+          {/* Availability Status - Screen Centered */}
+          <div className="flex items-center justify-center">
+            <div className="flex items-center px-4 py-1 border-[0.5px] border-white rounded-full">
+              <div className="w-3 h-3 bg-portfolio-green rounded-full mr-3 flex-shrink-0"></div>
+              <span className="text-white text-base font-montserrat italic uppercase tracking-wide">
+                Available for Work
+              </span>
             </div>
+          </div>
 
-            {/* Right Content - Portrait */}
-            <div className="relative lg:order-2 lg:absolute lg:right-0 lg:top-0 lg:bottom-0 lg:w-1/2">
-              <div className="relative mx-auto lg:mx-0 max-w-md lg:max-w-none lg:h-full">
-                <img
-                  src="/images/hero-image.png"
-                  alt="Rita Moussalli Portrait"
-                  className="w-full h-auto lg:h-full lg:w-full object-cover rounded-lg lg:rounded-l-3xl lg:rounded-r-none"
-                />
+          {/* Main Heading - Screen Centered */}
+          <div className="flex items-center justify-center">
+            <h1 className="text-white font-normal uppercase leading-[0.9] tracking-[-0.04em]">
+              <div className="text-6xl md:text-8xl lg:text-[12.5rem] xl:text-[12.5rem]">
+                <span className="font-montserrat">R</span>
+                <span className="font-pacifico lowercase">ita.</span>
               </div>
+            </h1>
+          </div>
+
+          {/* Description - Left Aligned */}
+          <div className="container mx-auto px-4 md:px-8 lg:px-60">
+            <div className="max-w-md">
+              <p className="text-white text-base font-normal leading-relaxed">
+                I blend artistry with cutting-edge technology to deliver
+                websites that not only look stunning but also drive results.
+              </p>
             </div>
+          </div>
+
+          {/* CTA Button - Left Aligned */}
+          <div className="container mx-auto px-4 md:px-8 lg:px-60">
+            <div className="flex justify-start">
+              <button className="flex items-center px-4 py-2 bg-portfolio-green rounded-full text-portfolio-dark-text text-base font-normal hover:bg-portfolio-green/90 transition-colors">
+                <svg
+                  className="w-5 h-5 mr-2"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M16.175 13H4V11H16.175L10.575 5.4L12 4L20 12L12 20L10.575 18.6L16.175 13Z" fill="#366560"/>
+                </svg>
+                Schedule a consultation
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Right Content - Portrait */}
+        <div className="absolute right-0 top-0 bottom-0 w-1/2 lg:flex items-end justify-end hidden lg:block">
+          <div className="relative mx-auto lg:mx-0 max-w-md lg:max-w-3xl">
+            <img
+              src="/images/hero-image.png"
+              alt="Rita Moussalli Portrait"
+              className="w-full h-auto object-contain rounded-lg"
+            />
           </div>
         </div>
       </main>
@@ -155,9 +144,9 @@ export default function Index() {
           <div className="mb-12 lg:mb-16">
             {/* Why Choose Me Indicator */}
             <div className="flex items-center mb-6">
-              <div className="flex items-center px-4 py-2 border border-portfolio-gray-border rounded-full">
+              <div className="flex items-center px-4 py-2 border-[0.5px] border-portfolio-dark rounded-full">
                 <div className="w-3 h-3 bg-portfolio-green rounded-full mr-3 flex-shrink-0"></div>
-                <span className="text-portfolio-dark-text text-base font-normal uppercase tracking-wide">
+                <span className="text-portfolio-dark text-base font-montserrat italic uppercase tracking-wide">
                   Why Choose me
                 </span>
               </div>
@@ -165,19 +154,19 @@ export default function Index() {
 
             {/* Main Heading */}
             <h2 className="text-portfolio-dark text-5xl md:text-6xl lg:text-[5rem] font-normal leading-tight tracking-tight">
-              Why Work with Me
+              Why <span className="font-pacifico">Work</span> with Me
             </h2>
           </div>
 
           {/* Cards Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8">
-            {/* Tailored Design Card - Small */}
-            <div className="lg:col-span-3 bg-white rounded-3xl p-8 shadow-lg">
-              <div className="mb-6">
-                <div className="w-12 h-12 bg-portfolio-dark rounded-full flex items-center justify-center mb-6">
+          <div className="grid grid-cols-1 gap-6 lg:gap-8">
+            {/* Tailored Design Card */}
+            <div className="bg-white rounded-3xl p-8 shadow-lg">
+              <div className="flex items-center gap-6">
+                <div className="w-10 h-10 bg-portfolio-dark rounded-full flex items-center justify-center flex-shrink-0">
                   <svg
-                    width="24"
-                    height="24"
+                    width="16"
+                    height="16"
                     viewBox="0 0 24 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -203,49 +192,48 @@ export default function Index() {
                     </defs>
                   </svg>
                 </div>
-                <h3 className="text-portfolio-dark-text text-2xl font-normal leading-6 mb-4">
-                  Tailored Design
-                </h3>
-                <p className="text-portfolio-dark-text text-base font-normal leading-relaxed">
-                  I believe that every brand is unique and deserves a website
-                  that is just as distinctive.
-                </p>
+                <div>
+                  <h3 className="text-portfolio-dark-text text-2xl font-normal leading-6 mb-2">
+                    Tailored Design
+                  </h3>
+                  <p className="text-portfolio-dark-text text-base font-normal leading-relaxed">
+                    I believe that every brand is unique and deserves a website
+                    that is just as distinctive.
+                  </p>
+                </div>
               </div>
             </div>
 
-            {/* User-Centric Approach Card - Large */}
-            <div className="lg:col-span-6 bg-white rounded-3xl p-8 shadow-lg">
-              <div className="flex flex-col h-full">
-                <div className="mb-8">
-                  <div className="w-32 h-32 lg:w-40 lg:h-40 bg-portfolio-dark rounded-full flex items-center justify-center mb-8 mx-auto">
-                    <svg
-                      width="120"
-                      height="120"
-                      viewBox="0 0 546 546"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="w-24 h-24 lg:w-28 lg:h-28"
-                    >
-                      <g clipPath="url(#clip0_12_1102)">
-                        <path
-                          d="M90.9986 182.002C40.7609 182.002 0 141.257 0 90.9986C0 40.74 40.7609 0 90.9986 0C141.252 0 181.997 40.7453 181.997 90.9986C181.997 141.252 222.748 182.002 273.001 182.002C323.254 182.002 364 141.257 364 91.0038C364 40.7505 404.75 0 455.003 0C505.257 0 546.002 40.7453 546.002 90.9986C546.002 141.252 505.257 181.997 455.003 181.997C304.212 181.997 182.002 304.259 182.002 454.993C182.002 505.22 141.257 545.992 91.0038 545.992C40.7505 545.992 0 505.257 0 455.003C0 404.75 40.7453 364 90.9986 364C141.252 364 181.987 323.254 181.987 273.001C181.987 222.748 141.257 182.002 90.9986 182.002Z"
-                          fill="#82FF1F"
-                        />
-                        <path
-                          d="M250.251 398.122C250.251 316.407 316.444 250.246 398.132 250.246C479.82 250.251 546.002 316.407 546.002 398.122C546.002 479.8 479.82 546.002 398.122 546.002C316.433 546.002 250.251 479.8 250.251 398.122Z"
-                          fill="#82FF1F"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_12_1102">
-                          <rect width="546" height="546" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </div>
+            {/* User-Centric Approach Card */}
+            <div className="bg-white rounded-3xl p-8 shadow-lg">
+              <div className="flex items-center gap-6">
+                <div className="w-10 h-10 bg-portfolio-dark rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 546 546"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clipPath="url(#clip0_12_1102)">
+                      <path
+                        d="M90.9986 182.002C40.7609 182.002 0 141.257 0 90.9986C0 40.74 40.7609 0 90.9986 0C141.252 0 181.997 40.7453 181.997 90.9986C181.997 141.252 222.748 182.002 273.001 182.002C323.254 182.002 364 141.257 364 91.0038C364 40.7505 404.75 0 455.003 0C505.257 0 546.002 40.7453 546.002 90.9986C546.002 141.252 505.257 181.997 455.003 181.997C304.212 181.997 182.002 304.259 182.002 454.993C182.002 505.22 141.257 545.992 91.0038 545.992C40.7505 545.992 0 505.257 0 455.003C0 404.75 40.7453 364 90.9986 364C141.252 364 181.987 323.254 181.987 273.001C181.987 222.748 141.257 182.002 90.9986 182.002Z"
+                        fill="#82FF1F"
+                      />
+                      <path
+                        d="M250.251 398.122C250.251 316.407 316.444 250.246 398.132 250.246C479.82 250.251 546.002 316.407 546.002 398.122C546.002 479.8 479.82 546.002 398.122 546.002C316.433 546.002 250.251 479.8 250.251 398.122Z"
+                        fill="#82FF1F"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_12_1102">
+                        <rect width="546" height="546" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
                 </div>
-                <div className="mt-auto">
-                  <h3 className="text-portfolio-dark-text text-2xl font-normal leading-6 mb-4">
+                <div>
+                  <h3 className="text-portfolio-dark-text text-2xl font-normal leading-6 mb-2">
                     User-Centric Approach
                   </h3>
                   <p className="text-portfolio-dark-text text-base font-normal leading-relaxed">
@@ -256,17 +244,16 @@ export default function Index() {
               </div>
             </div>
 
-            {/* Trending Technologies Card - Medium */}
-            <div className="lg:col-span-3 bg-white rounded-3xl p-8 shadow-lg">
-              <div className="mb-6">
-                <div className="w-32 h-32 bg-portfolio-dark rounded-full flex items-center justify-center mb-8 mx-auto">
+            {/* Trending Technologies Card */}
+            <div className="bg-white rounded-3xl p-8 shadow-lg">
+              <div className="flex items-center gap-6">
+                <div className="w-10 h-10 bg-portfolio-dark rounded-full flex items-center justify-center flex-shrink-0">
                   <svg
-                    width="80"
-                    height="80"
+                    width="16"
+                    height="16"
                     viewBox="0 0 512 512"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-16 h-16"
                   >
                     <path
                       d="M48.896 318.805C48.2986 321.024 48.5546 323.328 49.7493 325.291L92.8426 399.957C95.232 404.053 100.437 405.419 104.533 403.115L204.373 345.429V460.8C204.373 465.493 208.213 469.333 212.907 469.333H299.179C303.872 469.333 307.712 465.493 307.712 460.8V345.429L407.552 403.115C409.515 404.224 411.904 404.565 414.037 403.968C416.256 403.371 418.133 401.92 419.243 399.957L462.336 325.291C464.725 321.195 463.275 315.989 459.264 313.685L359.339 256L459.264 198.315C461.141 197.205 462.592 195.328 463.189 193.109C463.787 190.976 463.445 188.587 462.336 186.624L419.243 111.957C416.853 107.861 411.648 106.496 407.552 108.885L307.712 166.485V51.2C307.712 46.5066 303.872 42.6666 299.179 42.6666H212.907C208.213 42.6666 204.373 46.5066 204.373 51.2V166.485L104.533 108.885C100.437 106.496 95.232 107.861 92.8426 111.957L49.7493 186.624C48.5546 188.587 48.2986 190.976 48.896 193.109C49.4933 195.328 50.8586 197.205 52.8213 198.315L152.747 256L52.8213 313.685C50.8586 314.795 49.4933 316.672 48.896 318.805Z"
@@ -274,13 +261,15 @@ export default function Index() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-portfolio-dark-text text-2xl font-normal leading-6 mb-4">
-                  Trending Technologies
-                </h3>
-                <p className="text-portfolio-dark-text text-base font-normal leading-relaxed">
-                  I stay at the forefront of web design trends and technologies
-                  to offer you the most innovative solutions.
-                </p>
+                <div>
+                  <h3 className="text-portfolio-dark-text text-2xl font-normal leading-6 mb-2">
+                    Trending Technologies
+                  </h3>
+                  <p className="text-portfolio-dark-text text-base font-normal leading-relaxed">
+                    I stay at the forefront of web design trends and technologies
+                    to offer you the most innovative solutions.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -294,9 +283,9 @@ export default function Index() {
           <div className="mb-12 lg:mb-16">
             {/* Selected Work Indicator */}
             <div className="flex items-center mb-6">
-              <div className="flex items-center px-4 py-2 border border-portfolio-gray-border rounded-full">
+              <div className="flex items-center px-4 py-2 border-[0.5px] border-white rounded-full">
                 <div className="w-3 h-3 bg-portfolio-green rounded-full mr-3 flex-shrink-0"></div>
-                <span className="text-white text-base font-normal uppercase tracking-wide">
+                <span className="text-white text-base font-montserrat italic uppercase tracking-wide">
                   Selected Work 2022-2023
                 </span>
               </div>
@@ -304,7 +293,7 @@ export default function Index() {
 
             {/* Main Heading */}
             <h2 className="text-white text-5xl md:text-6xl lg:text-[5rem] font-normal leading-tight tracking-tight max-w-4xl">
-              Elevating Brands with Design Brilliance
+              <span className="font-pacifico">Elevating</span> <span className="font-montserrat">Brands with Design Brilliance</span>
             </h2>
           </div>
 
@@ -585,9 +574,9 @@ export default function Index() {
             <div className="space-y-8">
               {/* Process Indicator */}
               <div className="flex items-center">
-                <div className="flex items-center px-4 py-2 border border-portfolio-gray-border rounded-full">
+                <div className="flex items-center px-4 py-2 border-[0.5px] border-portfolio-dark rounded-full">
                   <div className="w-3 h-3 bg-portfolio-green rounded-full mr-3 flex-shrink-0"></div>
-                  <span className="text-portfolio-dark-text text-base font-normal uppercase tracking-wide">
+                  <span className="text-portfolio-dark text-base font-montserrat italic uppercase tracking-wide">
                     my Process
                   </span>
                 </div>
@@ -699,9 +688,9 @@ export default function Index() {
           <div className="mb-12 lg:mb-16">
             {/* What I Offer Indicator */}
             <div className="flex items-center mb-6">
-              <div className="flex items-center px-4 py-2 border border-portfolio-gray-border rounded-full">
+              <div className="flex items-center px-4 py-2 border-[0.5px] border-white rounded-full">
                 <div className="w-3 h-3 bg-portfolio-green rounded-full mr-3 flex-shrink-0"></div>
-                <span className="text-white text-base font-normal uppercase tracking-wide">
+                <span className="text-white text-base font-montserrat italic uppercase tracking-wide">
                   What I Offer
                 </span>
               </div>
@@ -892,7 +881,7 @@ export default function Index() {
                 </div>
 
                 {/* CTA Button */}
-                <button className="inline-flex items-center px-8 py-3 bg-green-200 rounded-full text-portfolio-dark-text text-base font-normal hover:bg-green-300 transition-colors">
+                <button className="inline-flex items-center px-8 py-3 bg-portfolio-green rounded-full text-portfolio-dark-text text-base font-normal hover:bg-portfolio-green/90 transition-colors">
                   <svg
                     width="16"
                     height="16"
@@ -1050,7 +1039,7 @@ export default function Index() {
                 </div>
 
                 {/* CTA Button */}
-                <button className="inline-flex items-center px-8 py-3 bg-green-200 rounded-full text-portfolio-dark-text text-base font-normal hover:bg-green-300 transition-colors">
+                <button className="inline-flex items-center px-8 py-3 bg-portfolio-green rounded-full text-portfolio-dark-text text-base font-normal hover:bg-portfolio-green/90 transition-colors">
                   <svg
                     width="16"
                     height="16"
@@ -1108,9 +1097,9 @@ export default function Index() {
             <div className="order-1 lg:order-2 space-y-8">
               {/* About Me Indicator */}
               <div className="flex items-center justify-center lg:justify-start">
-                <div className="flex items-center px-4 py-2 border border-portfolio-gray-border rounded-full">
+                <div className="flex items-center px-4 py-2 border-[0.5px] border-portfolio-dark rounded-full">
                   <div className="w-3 h-3 bg-portfolio-green rounded-full mr-3 flex-shrink-0"></div>
-                  <span className="text-portfolio-dark-text text-base font-normal uppercase tracking-wide">
+                  <span className="text-portfolio-dark text-base font-montserrat italic uppercase tracking-wide">
                     About Me
                   </span>
                 </div>
@@ -1429,9 +1418,9 @@ export default function Index() {
           <div className="bg-portfolio-dark rounded-2xl py-16 lg:py-20 px-8 lg:px-16 text-center">
             {/* Have Project in Mind Indicator */}
             <div className="flex items-center justify-center mb-6">
-              <div className="flex items-center px-4 py-2 border border-portfolio-gray-border rounded-full">
+              <div className="flex items-center px-4 py-2 border-[0.5px] border-white rounded-full">
                 <div className="w-3 h-3 bg-portfolio-green rounded-full mr-3 flex-shrink-0"></div>
-                <span className="text-white text-base font-normal uppercase tracking-wide">
+                <span className="text-white text-base font-montserrat italic uppercase tracking-wide">
                   Have Project in Mind?
                 </span>
               </div>

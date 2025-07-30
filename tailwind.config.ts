@@ -58,11 +58,16 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
         portfolio: {
-          dark: "#111111",
-          green: "#82FF1F",
+          dark: "#366560", // Changed from black to dark teal
+          green: "#F8C266", // Changed from bright green to golden yellow
           "gray-border": "#4F4F4F",
           "dark-text": "#1A1A1A",
         },
+      },
+      fontFamily: {
+        montserrat: ["Montserrat", "sans-serif"],
+        pacifico: ["Pacifico", "cursive"],
+        inter: ["Inter", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",

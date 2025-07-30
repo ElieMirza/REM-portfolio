@@ -78,8 +78,8 @@ npm run dev
 
 Replace the placeholder images in `public/images/` with your own:
 
-- `logo-header.png` - Your logo/brand image
-- `hero-image.png` - Main portrait/hero image
+- `logo-header.png` - Your logo/brand image (SVG placeholder)
+- `hero-image.png` - Main portrait/hero image (SVG placeholder)
 - `portfolio-*.svg` - Your portfolio project images
 - `about-hero.svg` - About page hero image
 - `profile-small.svg` - Small profile image
